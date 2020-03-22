@@ -71,8 +71,32 @@ justify-content: center;
   position:fixed;
   z-index: 3;
   box-shadow: -3px -3px 7px #fff, 3px 3px 5px rgba(94, 104, 121, .288);
+  Animation:beat 2s ease-in-out infinite;
+
 }
 
+
+
+@keyframes beat{
+  0%{
+    transform: rotate(-45deg) scale(0.2);
+  }
+  25%{
+    transform: rotate(-45deg) scale(0.4);
+  }
+  50%{
+    transform: rotate(-45deg) scale(0.2);
+  }
+  60%{
+    transform: rotate(-45deg) scale(0.7);
+  }
+  75%{
+    transform:rotate(-45deg) scale(0.4);
+  }
+  100%{
+    transform:rotate(-45deg) scale(0.2);
+  }
+}
 
 .heart:before,
 .heart:after {
